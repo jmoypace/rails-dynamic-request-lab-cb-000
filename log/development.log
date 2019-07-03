@@ -118,3 +118,10 @@ Processing by StudentsController#show as HTML
   Parameters: {"id"=>"show"}
   Rendered students/show.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 71.183.96.69 at 2019-07-03 15:56:03 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.4ms)
