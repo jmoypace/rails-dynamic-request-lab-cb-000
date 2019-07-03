@@ -134,3 +134,17 @@ Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.4ms)
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.1ms)[0m  INSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Lindsey"], ["last_name", "Stirling"], ["created_at", "2019-07-03 15:57:54.158036"], ["updated_at", "2019-07-03 15:57:54.158036"]]
   [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 71.183.96.69 at 2019-07-03 15:58:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 14ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 71.183.96.69 at 2019-07-03 15:58:21 +0000
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 186ms (Views: 184.7ms | ActiveRecord: 0.3ms)
